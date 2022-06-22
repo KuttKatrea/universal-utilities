@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "universal-utilities"
+version = "0.1.0"
+description = ""
+authors = ["Alan Reyes"]
+packages = [
+  {include = "kuu", from = "src"}
+]
+
+[tool.poetry.scripts]
+mkstproj = "kuu.bin.mkstproj:main"
+docker-list-context = "kuu.bin.docker_list_context:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.1.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
