@@ -10,6 +10,8 @@ packages = [
 [tool.poetry.scripts]
 mkstproj = "kuu.bin.mkstproj:main"
 docker-list-context = "kuu.bin.docker_list_context:main"
+projname = "kuu.bin.projname:main"
+mkpyrightconf = "kuu.bin.mkpyrightconf:main"
 
 [tool.poetry.dependencies]
 python = "^3.8"
