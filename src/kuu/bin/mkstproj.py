@@ -1,6 +1,7 @@
 import click
 import os
 import json
+from subprocess import run
 
 from click.exceptions import ClickException
 
@@ -34,6 +35,8 @@ def main(filename: str):
         )
 
     click.secho(f"Created sublime project file: {filename}")
+
+    run(["subl", filename])
 
 
 if __name__ == "__main__":
