@@ -32,7 +32,7 @@ def main():
 
     print(version_out)
 
-    out_filename = "pyrightconf.json"
+    out_filename = "pyrightconfig.json"
 
     with open(out_filename, mode="w", encoding=UTF_8) as fp:
         json.dump(
