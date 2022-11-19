@@ -12,14 +12,15 @@ COPY . /context/
 RUN find /context/
 """
 
+
 @click.command()
 def main():
     run(
         "docker build -t context-ls -f- .".split(" "),
         input=DOCKERFILE_CONTENT,
         encoding=UTF_8,
-        check=True
-        )
+        check=True,
+    )
 
 
 if __name__ == "__main__":
