@@ -13,6 +13,7 @@ docker-list-context = "kuu.bin.docker_list_context:main"
 projname = "kuu.bin.projname:main"
 mkpyrightconfig = "kuu.bin.mkpyrightconfig:main"
 noop = "kuu.bin.noop:main"
+firefox-container = "kuu.bin.firefox_container:main"
 
 [tool.poetry.dependencies]
 python = "^3.8"
