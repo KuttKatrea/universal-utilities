@@ -25,7 +25,8 @@ def main(filename: str):
         filename = filename + SUBLIME_PROJECT_EXTENSION
 
     if os.path.exists(filename):
-        raise ClickException(f"{filename} already exists.")
+        run(["subl", filename])
+        return
 
     with open(filename, mode="w", encoding=UTF_8) as fp:
         json.dump(
