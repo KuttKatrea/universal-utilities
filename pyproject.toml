@@ -14,6 +14,7 @@ projname = "kuu.bin.projname:main"
 mkpyrightconfig = "kuu.bin.mkpyrightconfig:main"
 noop = "kuu.bin.noop:main"
 firefox-container = "kuu.bin.firefox_container:main"
+mkmvnproj = "kuu.bin.mkmvnproj:main"
 
 [tool.poetry.dependencies]
 python = "^3.8"
